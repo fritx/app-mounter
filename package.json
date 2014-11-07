@@ -1,0 +1,14 @@
+{
+  "name": "app-mounter",
+  "version": "0.0.1",
+  "description": "Mount your apps onto one server",
+  "repository": "git@github.com:fritx/app-mounter.git",
+  "main": "./lib/mounter.js",
+  "dependencies": {
+    "express": "^4.10.1",
+    "methods": "^1.1.0"
+  },
+  "devDependencies": {
+    "request": "^2.47.0"
+  }
+}
