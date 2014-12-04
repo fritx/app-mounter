@@ -8,20 +8,19 @@ I wanted to mount different [express](https://github.com/strongloop/express) app
 
 ## Usage
 
-To proxy an app:
+Create an app:
 
 ```js
 // app1.js
+var express = require('app-mounter/express')
 var app = express()
-var Mounter = require('app-mounter')
-Mounter.proxy(app)
 app.get('/hello', function(req, res){
   res.send('hello')
 })
 module.exports = app
 ```
 
-To mount an app:
+Mount an app in the main-app:
 
 ```js
 // main-app.js
@@ -30,6 +29,7 @@ var mounter = new Mounter()
 mounter.mount('/app1', require('./app1'))
 // Gonna mount more apps..
 var server = mounter.listen(80, function(err){
-  // Visit http://localhost/app1/hello
+  // Check http://localhost/app1/hello
+  // --> hello
 })
 ```
