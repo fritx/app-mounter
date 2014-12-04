@@ -1,6 +1,6 @@
 {
   "name": "app-mounter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mount your apps onto one server",
   "repository": "git@github.com:fritx/app-mounter.git",
   "main": "./lib/mounter.js",
